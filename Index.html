@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="heading">CSS SELECTORS</h1>
+    <h1>DESCENDANT SELECTOR</h1>
+    <h3>Definition:</h3>
+    <p>Selects all specified descendant child elements under the parent element.</p>
+    <h3>Example: (div p)</h3>
+    <p class="para">This is paragrapgh outside main div</p>
+    <div class="main-div" id="main-div1">
+        <p class="para">This is paragrapgh under main div</p>
+        <p class="para">This is paragrapgh under main div</p>
+        <div class="sub-div">
+            <p class="para">This is paragrapgh under sub div</p>
+            <p class="para">This is paragrapgh under sub div</p>
+        </div>
+        <p class="para">This is paragrapgh under main div</p>
+        <p class="para">This is paragrapgh under main div</p>
+    </div>
+    <p class="para">This is paragrapgh outside main div</p>
+    <p class="para">This is paragrapgh outside main div</p>
+
+    <h1>CHILD SELECTOR</h1>
+    <h3>Definition:</h3>
+    <p>Selects all specified immediate child elements under the parent element.</p>
+    <h3>Example: (div > p)</h3>
+    <p class="para">This is paragrapgh outside main div</p>
+    <div class="main-div" id="main-div2">
+        <p class="para">This is paragrapgh under main div</p>
+        <p class="para">This is paragrapgh under main div</p>
+        <div class="sub-div">
+            <p class="para">This is paragrapgh under sub div</p>
+            <p class="para">This is paragrapgh under sub div</p>
+        </div>
+        <p class="para">This is paragrapgh under main div</p>
+        <p class="para">This is paragrapgh under main div</p>
+    </div>
+    <p class="para">This is paragrapgh outside main div</p>
+    <p class="para">This is paragrapgh outside main div</p>
+
+    <h1> ADJACENT SIBLING SELECTOR</h1>
+    <h3>Definition:</h3>
+    <p>Selects specified elements which are immediate to an adjacent element.</p>
+    <h3>Example: (div + p)</h3>
+    <p class="para">This is paragrapgh outside main div</p>
+    <div class="main-div" id="main-div3">
+        <p class="para">This is paragrapgh under main div</p>
+        <p class="para">This is paragrapgh under main div</p>
+        <div class="sub-div">
+            <p class="para">This is paragrapgh under sub div</p>
+            <p class="para">This is paragrapgh under sub div</p>
+        </div>
+        <p class="para">This is paragrapgh under main div</p>
+        <p class="para">This is paragrapgh under main div</p>
+    </div>
+    <p class="para">This is paragrapgh outside main div</p>
+    <p class="para">This is paragrapgh outside main div</p>
+
+    <h1> GENERAL SIBLING SELECTOR</h1>
+    <h3>Definition:</h3>
+    <p>Selects all specified elements which are siblings to an adjacent element.</p>
+    <h3>Example: (div ~ p)</h3>
+    <p class="para">This is paragrapgh outside main div</p>
+    <div class="main-div" id="main-div4">
+        <p class="para">This is paragrapgh under main div</p>
+        <p class="para">This is paragrapgh under main div</p>
+        <div class="sub-div">
+            <p class="para">This is paragrapgh under sub div</p>
+            <p class="para">This is paragrapgh under sub div</p>
+        </div>
+        <p class="para">This is paragrapgh under main div</p>
+        <p class="para">This is paragrapgh under main div</p>
+    </div>
+    <p class="para">This is paragrapgh outside main div</p>
+    <p class="para">This is paragrapgh outside main div</p>
+</body>
+</html>
