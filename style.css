@@ -1,0 +1,44 @@
+/* Universal Selector */
+body *{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0;
+}
+/* Element Selector */
+h1{
+    text-decoration: underline;
+}
+/* Id Selector */
+#heading{
+    text-align: center;
+    font-size: 50px;
+}
+/* Class Selector */
+.main-div{
+    padding-left:50px;
+}
+.sub-div{
+    padding-left:80px;
+}
+.para{
+    width:255px;
+}
+/* Descendant Selector */
+div#main-div1 p {
+    background-color: brown;;
+    color:white;
+}
+/* Child Selector */
+div#main-div2 > p{
+    background-color: purple;
+    color:white;
+}
+/* Adjacent Sibling Selector */
+div#main-div3 + p{
+    background-color:green;;
+    color:white;
+}
+/* General Sibling Selector */
+div#main-div4 ~ p{
+    background-color:red;
+    color:white;
+}
